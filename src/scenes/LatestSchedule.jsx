@@ -36,39 +36,22 @@ const LatestSchedule = ({ setSelectedPage }) => {
       <div className="md:flex md:flex-row md:items-start gap-20">
         <motion.div
           className="inline-block text-start"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.15 }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}
           onViewportEnter={() => setSelectedPage("latestSchedule")}
         >
           {/* /Month */}
           <div className="mb-10">
             <p className="font-title mb-2 font-black text-5xl uppercase max-w-screen-sm ">
               <span className="text-primary-1">Latest Schedule</span>
-              <br />
-              {latestScheduleData?.latestScheduleTitle ??
-                "something went wrong"}
             </p>
             <div className="flex justify-start my-5">
               <LineGradient width="w-3/5" />
             </div>
+            <p className="font-title mb-2 font-black text-5xl uppercase max-w-screen-sm ">
+              {latestScheduleData?.latestScheduleTitle ??
+                "something went wrong"}
+            </p>
 
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.15 }}
-              transition={{ duration: 0.5 }}
-              variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-              }}
-              className="mb-16"
-            >
+            <motion.div className="mb-16">
               {/* DAY DETAILS */}
               <div className="my-5">
                 {latestScheduleData?.days?.map((e) => (

@@ -36,14 +36,6 @@ const PreviousSchedule = ({ setSelectedPage }) => {
       <div className="md:flex md:flex-row md:text-left md:items-start gap-20">
         <motion.div
           className="inline-block text-start"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.15 }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}
           onViewportEnter={() => setSelectedPage("previousSchedule")}
         >
           {/* /Month */}
@@ -59,17 +51,7 @@ const PreviousSchedule = ({ setSelectedPage }) => {
                 "Something went wrong"}
             </p>
 
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.15 }}
-              transition={{ duration: 0.5 }}
-              variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-              }}
-              className="mb-16"
-            >
+            <motion.div className="mb-16">
               {/* DAY DETAILS */}
               <div className="my-5">
                 {previousScheduleData?.days == undefined

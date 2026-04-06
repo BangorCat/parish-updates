@@ -38,14 +38,6 @@ const PriorityNotices = ({ setSelectedPage }) => {
       {/* FIRST ROW */}
       <motion.div
         className="inline-block"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.5 }}
-        variants={{
-          hidden: { opacity: 0, x: -50 },
-          visible: { opacity: 1, x: 0 },
-        }}
         onViewportEnter={() => setSelectedPage("priorityNotices")}
       >
         {/* /TITLE - PRIORITY NOTICES  */}
@@ -56,17 +48,7 @@ const PriorityNotices = ({ setSelectedPage }) => {
           <LineGradient width="w-2/5" />
         </div>
         {/* URGENT MESSAGES */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.15 }}
-          transition={{ delay: 0.6, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}
-          className="mb-16"
-        >
+        <motion.div className="mb-16">
           {/* Priority Notices Entires */}
           <div className="my-5">
             <p className=" text-2xl font-bold">
