@@ -2,6 +2,9 @@
 
 This project is created to share information for the community. Content is published under responsible use—no copyrighted or harmful material—and personal data is not collected without consent.
 
+<img width="200" height="200" alt="qr code to the website" src="https://github.com/user-attachments/assets/8eacadd2-92f3-483a-812c-129a2c04c52a" />
+
+
 ## Purpose
 
 Provides the information of events, readings, and remembrances for our local community, and urgent messages that notify when printed newsletters are out of date or when cancellations or other unexpected situations occur and the community needs to be informed.
